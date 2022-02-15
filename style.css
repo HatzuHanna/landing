@@ -2,6 +2,8 @@
 
 :root{
    --coolgrey : #F6F6F6;
+   --pale: #bdbdbd;
+   --ncream: #dbdbd5;
 }
 
 *{
@@ -15,6 +17,8 @@ body{
     background-color: antiquewhite;
 }
  
+
+/* ***********HEADER*********** */
 
 #header{
     
@@ -75,6 +79,48 @@ a{
         color: rgb(49, 49, 49);
         transform: scale(1.1);
  }
+
+/* ***********END HEADER************ */
+
+main{
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    background-color: transparent;
+    gap: 0;
+    margin: 0;
+    padding: 0;
+}
+
+.video{
+    display: flex;
+    height: max-content;
+    padding: 2em 0;
+    outline: 1px solid red;
+    justify-content: center;
+}
+
+.sec1{
+    display: flex;
+    background-color: var(--pale);
+    height: max-content;
+}
+
+#about,#contact,#quote{
+    height: 100%;
+    width: 33%;
+    outline: 1px solid blue;
+    padding: 1em;
+    
+}
+
+
+/* *****************
+*****************
+MEDIA QUERY******
+************
+*****************
+***************** */
 
 @media (max-width: 750px) {
 
