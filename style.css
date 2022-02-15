@@ -2,7 +2,7 @@
 
 :root{
    --coolgrey : #F6F6F6;
-   --pale: #bdbdbd;
+   --pale: #e0dfdf;
    --ncream: #dbdbd5;
 }
 
@@ -14,7 +14,7 @@
     font-family: 'Roboto', sans-serif;
 }
 body{
-    background-color: antiquewhite;
+    background-color: rgb(255, 255, 255);
 }
  
 
@@ -84,6 +84,7 @@ a{
 
 main{
     width: 100vw;
+    max-width: 100%;
     display: flex;
     flex-direction: column;
     background-color: transparent;
@@ -93,26 +94,82 @@ main{
 }
 
 .video{
+    width: 100%;
+    max-width: 100%;
     display: flex;
     height: max-content;
-    padding: 2em 0;
-    outline: 1px solid red;
+    padding: 2em ;
+    /* outline: 1px solid red; */
     justify-content: center;
 }
 
 .sec1{
+    width: 100%;
+    max-width: 100%;
     display: flex;
+    flex-direction: row;
     background-color: var(--pale);
-    height: max-content;
+    height: fit-content;
 }
 
 #about,#contact,#quote{
-    height: 100%;
+    display: flex;
+    flex-direction: column; 
+    gap: 1em;   
+    height: auto;
     width: 33%;
-    outline: 1px solid blue;
-    padding: 1em;
+    /* outline: 1px solid blue; */
+    padding: 1.5em;
+    align-items: center;
+    text-align: justify;
+}
+
+#about,#quote{
+    background-color: var(--coolgrey);
+}
+
+.crew , .phone{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+#crew , #phone{
+     
+     
+    margin: 0 auto;
+    width:100%;  
+    box-shadow: 0 0 5px 5px #aaaaaa;
+} 
+
+ #contact {
+     display: flex;
+ 
+     text-align: right;
+    align-items: flex-end; 
+     gap: 2em;
+    justify-content: space-between;
+    
+ }
+
+ 
+
+  #ax:hover {
+        color: rgb(77, 80, 107);
+         
+      
+        transform: scale(1.1);
+ }
+.phone{
+    height: auto;
     
 }
+  
+
+
+
 
 
 /* *****************
@@ -122,14 +179,30 @@ MEDIA QUERY******
 *****************
 ***************** */
 
-@media (max-width: 750px) {
+@media (max-width: 700px) {
 
 #nav-bar{
-    color:red;
+   
     display: flex;
     flex-direction: column;
     
     align-items: flex-end;    
+}
+.sec1{
+    display: flex;
+    flex-direction: column; 
+    
+}
+
+#about,#contact,#quote{
+    display: flex;
+    flex-direction: column; 
+    gap: 1em;   
+    height: auto;
+    width: 100%;
+    outline: 1px solid blue;
+    padding: 1em;
+    
 }
 
  
