@@ -50,7 +50,7 @@ body{
 #header-img{
     display: flex;
     height: 100%;
-    width: fit-content;
+    width: cover;
     max-width: 100%;
    
 }
