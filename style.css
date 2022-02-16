@@ -21,7 +21,7 @@ body{
 /* ***********HEADER*********** */
 
 #header{
-    
+    position: fixed;
     background-color:   var(--coolgrey);
     width: 100%;
     max-width: 100%;
@@ -30,7 +30,7 @@ body{
     flex-direction:row;
     padding: 0 2em;
     margin: 0 auto;
-    outline:  20px blue;
+    
 }
 
 
@@ -83,6 +83,8 @@ a{
 /* ***********END HEADER************ */
 
 main{
+    height:max-content;
+    outline: 2px solid blue;
     width: 100vw;
     max-width: 100%;
     display: flex;
@@ -90,7 +92,8 @@ main{
     background-color: transparent;
     gap: 0;
     margin: 0;
-    padding: 0;
+    padding:5em 0;
+    padding-bottom: 0;
 }
 
 .video{
@@ -101,7 +104,19 @@ main{
     padding: 2em ;
     /* outline: 1px solid red; */
     justify-content: center;
+    border-radius: 50%;
+    
 }
+
+#video{
+    box-shadow: 0 0 5px 5px #aaaaaa;
+}
+
+/* 
+***************
+************SECTION 1**********************
+*************** */
+
 
 .sec1{
     width: 100%;
@@ -117,7 +132,7 @@ main{
     flex-direction: column; 
     gap: 1em;   
     height: auto;
-    width: 33%;
+    width: calc(100vw/3);
     /* outline: 1px solid blue; */
     padding: 1.5em;
     align-items: center;
@@ -128,48 +143,92 @@ main{
     background-color: var(--coolgrey);
 }
 
-.crew , .phone{
+.crew , .phone .ware {
     display: flex;
     width: 100%;
     align-items: center;
     margin: 0 auto;
     justify-content: center;
+    
 }
 
-#crew , #phone{
-     
-     
+#crew , #phone, #whse{
+         
     margin: 0 auto;
     width:100%;  
     box-shadow: 0 0 5px 5px #aaaaaa;
 } 
 
- #contact {
+ #contact{
      display: flex;
- 
      text-align: right;
-    align-items: flex-end; 
-     gap: 2em;
-    justify-content: space-between;
-    
+     align-items: flex-end; 
+     gap:0;
+     padding-bottom: 0;
  }
+ #quote{
+    display: flex;
+    text-align: right;
+    align-items: flex-end; 
+    gap:0;
+    padding-bottom: 0;
+}
+
+
 
  
+.texts{
+    display: flex;
+    flex-direction: column;
+    height: 100%; 
+    text-align: right;
+    text-align: justify;
+    line-height: 1.5em;
+    width: 100%;
+    align-items:flex-end;
+   
+}
 
-  #ax:hover {
-        color: rgb(77, 80, 107);
-         
-      
-        transform: scale(1.1);
- }
-.phone{
-    height: auto;
+#contact > .texts{
+    justify-content: center;
+}
+
+#quote > .texts{
+  
+    justify-content: center;
+   
+}
+
+#michael:hover{
+    color: rgb(98, 91, 122);
+    transform: scale(1.01);
     
 }
-  
 
 
+/* 
+***************
+************SECTION**********************
+*************** */
 
+.sec2{
+    display: flex;
+    height: 6   em;
+    width: 100vw;
+    max-width: 100%;
+    background-color: #aaaaaa;
+    justify-content: center;
+    align-items: center;
+}
+
+#form{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    padding: 2em;
+    justify-content: center;
+    align-items: center;
+}
 
 
 /* *****************
@@ -200,7 +259,6 @@ MEDIA QUERY******
     gap: 1em;   
     height: auto;
     width: 100%;
-    outline: 1px solid blue;
     padding: 1em;
     
 }
